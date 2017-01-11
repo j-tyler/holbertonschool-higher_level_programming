@@ -1,2 +1,5 @@
 def multiple_returns(sentence):
-    return len(sentence), list(sentence)[0]
+    l = len(sentence)
+    if l == 0:
+        return l, None
+    return l, list(sentence)[0]
