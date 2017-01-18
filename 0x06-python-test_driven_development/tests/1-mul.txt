@@ -1,0 +1,55 @@
+##
+# Testsuite for 1-mul.py
+# 
+# Expected to find one function: mul(a, b)
+##
+
+>>> mul = __import__('1-mul').mul # doctest: +ELLIPSIS
+...
+
+>>> mul(10, 10)
+100
+
+>>> mul(-10, 10)
+-100
+
+>>> mul(10, -10)
+-100
+
+>>> mul(-10, -10)
+100
+
+>>> mul("a", 5)
+'aaaaa'
+
+>>> mul(5, "a")
+'aaaaa'
+
+>>> mul(5.1, 'a') # doctest: +ELLIPSIS
+Traceback (most recent call last):
+...
+TypeError: ...
+
+>>> mul('a', 'a') # doctest: +ELLIPSIS
+Traceback (most recent call last):
+...
+TypeError: ...
+
+>>> mul(2, (1, 2))
+(1, 2, 1, 2)
+
+>>> mul(2, [1, 2])
+[1, 2, 1, 2]
+
+>>> mul(2, {'a':1, 'b':2}) # doctest: +ELLIPSIS
+Traceback (most recent call last):
+...
+TypeError: ...
+
+>>> mul(1e10000, 1e10000)
+inf
+
+>>> mul(2 , set((1, 2, 1))) # doctest: +ELLIPSIS
+Traceback (most recent call last):
+...
+TypeError: ...

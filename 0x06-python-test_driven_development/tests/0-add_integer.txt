@@ -1,0 +1,42 @@
+>>> add_integer = __import__('0-add_integer').add_integer # doctest: +ELLIPSIS
+...
+
+
+# These are comments, hoping they don't get show
+#
+#
+#
+# stuff
+
+>>> add_integer(4, 5)
+9
+
+>>> add_integer(10000, -1)
+9999
+
+>>> add_integer(0, 0)
+0
+
+>>> add_integer(0, -1)
+-1
+
+>>> add_integer("string", 0) # doctest: +ELLIPSIS
+Traceback (most recent call last):
+...
+TypeError: a must be an integer
+
+>>> add_integer(0, "string") # doctest: +ELLIPSIS
+Traceback (most recent call last):
+...
+TypeError: b must be an integer
+
+>>> add_integer("string", "string") # doctest: +ELLIPSIS
+Traceback (most recent call last):
+...
+TypeError: a must be an integer
+b must be an integer
+
+>>> add_integer(1e30000, 1e30000) # doctest: +ELLIPSIS
+Traceback (most recent call last):
+...
+OverflowError: Numbers are approaching infinity
