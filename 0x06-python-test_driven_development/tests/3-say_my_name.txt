@@ -1,0 +1,31 @@
+##
+# Testsuite for 3-say_my_name.py
+#
+# Expected to find one function say_my_name(first_name, last_name="")
+#     function takes two strings and prints out a response
+##
+
+>>> say = __import__('3-say_my_name').say_my_name
+
+>>> say("Tina", "Lee")
+My name is Tina Lee
+
+>>> say(1, "one cross each")
+Traceback (most recent call last):
+...
+TypeError: first_name must be a string
+
+>>> say(None, None)
+Traceback (most recent call last):
+...
+TypeError: first_name must be a string
+
+>>> say("Tina", None)
+Traceback (most recent call last):
+...
+TypeError: last_name must be a string
+
+>>> say()
+Traceback (most recent call last):
+...
+TypeError: say_my_name() missing 1 required positional argument: 'first_name'
