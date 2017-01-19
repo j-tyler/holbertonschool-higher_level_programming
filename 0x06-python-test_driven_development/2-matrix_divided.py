@@ -22,7 +22,7 @@ def matrix_divided(matrix, div):
     if len(matrix[0]) < 2:
         raise TypeError("matrix must be a matrix" +
                         "(list of lists) of integers/floats")
-    for row in range(matrix):
+    for row in range(0, len(matrix)):
         if not isinstance(matrix[row], list):
             raise TypeError("matrix must be a matrix" +
                             "(list of lists) of integers/floats")
@@ -33,5 +33,5 @@ def matrix_divided(matrix, div):
             if not isinstance(n, (int, float)):
                 raise TypeError("matrix must be a matrix" +
                                 "(list of lists) of integers/floats")
-    new = [round(n / div, 2) for n in row[for row in matrix]]
+    new = [[round(n / div, 2) for n in r] for r in matrix]
     return new
