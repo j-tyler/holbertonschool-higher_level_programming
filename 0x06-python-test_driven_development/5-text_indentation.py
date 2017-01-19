@@ -32,4 +32,4 @@ def text_indentation(text):
     new = [(line + '?\n\n') if index + 1 != len(new) else line
            for index, line in enumerate(new)]
     new = ''.join(new)
-    print(new)
+    print("{:s}".format(new), end="")
