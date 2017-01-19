@@ -21,23 +21,23 @@ Traceback (most recent call last):
 ...
 TypeError: size must be an integer
 
->>> ps(-1.5) # doctest: ELLIPSIS
+>>> ps(-1.5) # doctest: +ELLIPSIS
 Traceback (most recent call last):
 ...
 TypeError: size must be an integer
 
->>> print_square(None)
+>>> ps(None)
 Traceback (most recent call last):
 ...
 TypeError: size must be an integer
 
->>> ps() # doctest: ELLIPSIS
+>>> ps() # doctest: +ELLIPSIS
 Traceback (most recent call last):
 ...
 TypeError: print_square() missing 1 required positional argument: 'size'
 
->>> ps(TRUE)
+>>> ps(True)
 #
 
->>> ps(FALSE)
+>>> ps(False)
 
