@@ -1,3 +1,4 @@
+#!/usr/bin/python3
 """
 This module prints out a poundsymbol square
 There is one function, print_square(size)
