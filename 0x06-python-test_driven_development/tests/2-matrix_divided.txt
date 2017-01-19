@@ -18,6 +18,14 @@
 >>> matrix_divided(matrix, -2)
 [[-0.5, -1.0, -1.5], [-2.0, -2.5, -3.0]]
 
+>>> matrix_divided([1, 2, 3], 1)
+[[1.0, 2.0, 3.0]]
+
+>>> matrix_divided(1, 1)
+Traceback (most recent call last):
+...
+TypeError: matrix must be a matrix (list of lists) of integers/floats
+
 >>> matrix_divided(matrix, [1, 2]) # doctest: +ELLIPSIS
 Traceback (most recent call last):
 ...
@@ -90,4 +98,14 @@ TypeError: Each row of the matrix must have the same size
 >>> matrix_divided([[], [1, 2, 3]], 2) # doctest: +ELLIPSIS
 Traceback (most recent call last):
 ...
-TypeError: matrix must be a matrix(list of lists) of integers/floats
+TypeError: Each row of the matrix must have the same size
+
+>>> matrix_divided(1)
+Traceback (most recent call last):
+...
+TypeError: matrix_divided() missing 1 required positional argument: 'div'
+
+>>> matrix_divided(None, 1)
+Traceback (most recent call last):
+...
+TypeError: matrix must be a matrix (list of lists) of integers/floats

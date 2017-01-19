@@ -18,20 +18,20 @@ def matrix_divided(matrix, div):
         raise ZeroDivisionError("division by zero")
     if not isinstance(div, (int, float)):
         raise TypeError("div must be a number")
+    if not isinstance(matrix, list):
+        raise TypeError("matrix must be a matrix (list of lists)" +
+                        " of integers/floats")
 
-    if len(matrix[0]) < 2:
-        raise TypeError("matrix must be a matrix" +
-                        "(list of lists) of integers/floats")
     for row in range(0, len(matrix)):
         if not isinstance(matrix[row], list):
-            raise TypeError("matrix must be a matrix" +
+            raise TypeError("matrix must be a matrix " +
                             "(list of lists) of integers/floats")
         if not len(matrix[0]) == len(matrix[row]):
             raise TypeError("Each row of the matrix must have the same size")
 
         for n in matrix[row]:
             if not isinstance(n, (int, float)):
-                raise TypeError("matrix must be a matrix" +
+                raise TypeError("matrix must be a matrix " +
                                 "(list of lists) of integers/floats")
     new = [[round(n / div, 2) for n in r] for r in matrix]
     return new
