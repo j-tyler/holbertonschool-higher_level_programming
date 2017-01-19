@@ -1,0 +1,43 @@
+##
+# Testsuite for 4-print_square.py
+#
+# Expected to find one function: print_square(size)
+#     function takes in a positive number and prints out a square
+##
+
+>>> ps = __import__('4-print_square').print_square
+
+>>> ps(2)
+##
+##
+
+>>> ps(-2) # doctest: +ELLIPSIS
+Traceback (most recent call last):
+...
+ValueError: size must be >= 0
+
+>>> ps("hello") # doctest: +ELLIPSIS
+Traceback (most recent call last):
+...
+TypeError: size must be an integer
+
+>>> ps(-1.5) # doctest: ELLIPSIS
+Traceback (most recent call last):
+...
+TypeError: size must be an integer
+
+>>> print_square(None)
+Traceback (most recent call last):
+...
+TypeError: size must be an integer
+
+>>> ps() # doctest: ELLIPSIS
+Traceback (most recent call last):
+...
+TypeError: print_square() missing 1 required positional argument: 'size'
+
+>>> ps(TRUE)
+#
+
+>>> ps(FALSE)
+
