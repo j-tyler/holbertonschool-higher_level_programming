@@ -1,7 +1,10 @@
 #!/usr/bin/python3
+"""
+next step in square class
+"""
 class Square:
     def __init__(self, size=0):
-        self.size = size;
+        self.size = size
 
     @property
     def size(self):
