@@ -2,5 +2,7 @@
 """
 this is an empty Square class
 """
+
+
 class Square:
     pass
