@@ -1,0 +1,34 @@
+>>> Square = __import__('4-square').Square
+
+>>> x = Square(3)
+>>> print(type(x))
+<class '4-square.Square'>
+
+>>> print(x.__dict__)
+{'_Square__size': 3}
+
+>>> x = Square()
+>>> print(type(x))
+<class '4-square.Square'>
+
+>>> print(x.__dict__)
+{'_Square__size': 0}
+
+>>> x = Square(0)
+>>> print(type(x))
+<class '4-square.Square'>
+
+>>> print(x.__dict__)
+{'_Square__size': 0}
+
+>>> x = Square(3)
+>>> print(x._Square__size)
+3
+
+>>> x = Square()
+>>> print(x.size)
+0
+
+>>> x = Square(5)
+>>> print(x.size)
+5
