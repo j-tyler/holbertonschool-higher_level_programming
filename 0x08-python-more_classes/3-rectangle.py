@@ -11,7 +11,7 @@ class Rectangle:
 
     def __str__(self):
         string = '{}'.format('\n'.join(['#' * self.__width for row in
-                 range(0, self.__height)]))
+                  range(0, self.__height)]))
         return string
 
     @property
