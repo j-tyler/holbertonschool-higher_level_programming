@@ -11,11 +11,10 @@ class Rectangle:
     def __init__(self, width=0, height=0):
         self.width = width
         self.height = height
-        self.print_symbol = Rectangle.print_symbol
         Rectangle.number_of_instances += 1
 
     def __str__(self):
-        string = "{}".format('\n'.join([Rectangle.print_symbol * self.__width
+        string = "{}".format('\n'.join([str(self.print_symbol) * self.__width
                  for row in range(0, self.__height)]))
         return string
 
@@ -35,10 +34,6 @@ class Rectangle:
     def height(self):
         return self.__height
 
-    @property
-    def print_symbol():
-        return Rectangle.print_symbol
-
     @width.setter
     def width(self, width):
         if not isinstance(width, int):
@@ -54,10 +49,6 @@ class Rectangle:
         if height < 0:
             raise ValueError("width must be >= 0")
         self.__height = height
-
-    @print_symbol.setter
-    def print_symbol(self, value):
-        Rectangle.print_symbol = value
 
     def area(self):
         return self.__width * self.__height
