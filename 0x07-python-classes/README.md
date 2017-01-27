@@ -3,4 +3,4 @@
 
 **Learning to code with [Justin Marsh](https://twitter.com/dogonthecircuit)**
 
-[Holberton School](https://www.holbertonschool.com) assignment solutions for January 23rd, 2017.
+[Holberton School](https://www.holbertonschool.com) assignment solutions for January 23th, 2017.
