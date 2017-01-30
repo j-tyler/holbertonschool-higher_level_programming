@@ -1,0 +1,28 @@
+Test suite for 7-base_geometry.py
+
+>>> BaseGeometry = __import__('7-base_geometry').BaseGeometry
+
+>>> geo = BaseGeometry()
+
+>>> geo.integer_validator("name", 1)
+
+>>> geo.integer_validator("name", -1)
+Traceback (most recent call last):
+...
+ValueError: name must be greater than 0
+
+>>> geo.integer_validator("name", 1.1)
+Traceback (most recent call last):
+...
+TypeError: name must be an integer
+
+>>> geo.integer_validator("name", "cat")
+Traceback (most recent call last):
+...
+TypeError: name must be an integer
+
+>>> geo.area()
+Traceback (most recent call last):
+...
+Exception: area() is not implemented
+
