@@ -9,15 +9,15 @@ class BaseGeometry:
     Base class for Geometry
     """
     def area(self):
-    """
-    Base area function
-    """
+        """
+        Base area function
+        """
         raise Exception("area() is not implemented")
 
     def integer_validator(self, name, value):
-    """
-    Defines valid input
-    """
+        """
+        Defines valid input
+        """
         if type(value) is not int:
             raise TypeError("{:s} must be an integer".format(name))
         if value <= 0:

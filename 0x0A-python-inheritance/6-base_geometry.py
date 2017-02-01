@@ -12,7 +12,7 @@ class BaseGeometry:
         pass
 
     def area(self):
-    """
-    Base area function
-    """
+        """
+        Base area function
+        """
         raise Exception("area() is not implemented")
