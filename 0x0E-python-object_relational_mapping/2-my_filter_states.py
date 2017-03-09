@@ -15,5 +15,5 @@ if __name__ == "__main__":
     cur.execute("SELECT id, name FROM states ORDER BY states.id ASC")
     rows = cur.fetchall()
     for row in rows:
-        if row[1] == 'Arizona':
+        if row[1] == sys.argv[4]:
             print("{}".format(row))
